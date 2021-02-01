@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232323;
+}
+
+.square {
+    width: 30%;
+    background-color: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 30px;
+}
+
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(58, 132, 228);
+    font-family: Cambria, Cochin;
+    padding: 18px ;
+}
+
+#colorDisplay {
+    font-size: 90px;
+}
+
+
+.paragraph {
+    display: flex;
+    text-align: center;
+    background-color: white;
+    padding: 0px;
+    margin-bottom: 25px; 
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 88, 251);
+}
+.paragraph #newcolors, #easy, #hard {
+    margin-left: 29%;
+    padding: 0 5px;     
+}
+.paragraph #newcolors:hover, #easy:hover, #hard:hover {
+    background-color: rgb(58, 132, 228);
+    color: white;
+    cursor: pointer;
+}
+
+.paragraph span {
+    margin-left: 9%;
+}
+
+#easy {
+    position: fixed;
+    margin-left: 61%;
+}
+#hard {
+    position: fixed;
+    margin-left: 64.5%;
+}
+
+.selected {
+    background: rgb(58, 132, 255);
+    color: white;
+}
