@@ -41,6 +41,9 @@ easy.addEventListener("click", function(){
     colors = generateRandomColor(3);
     colorPicked = pickColor();
     colorDisplay.textContent = colorPicked
+    message.textContent = ""
+    newcolors.textContent = "NEW COLORS"
+    h1.style.backgroundColor = "steelblue"
     for(var i = 0; i < squares.length; i++){
         if(colors[i]){
             squares[i].style.backgroundColor = colors[i]
@@ -56,6 +59,9 @@ hard.addEventListener("click", function(){
     colors = generateRandomColor(6);
     colorPicked = pickColor();
     colorDisplay.textContent = colorPicked
+    message.textContent = ""
+    newcolors.textContent = "NEW COLORS"
+    h1.style.backgroundColor = "steelblue"
     for(var i = 0; i < squares.length; i++){
         if(colors[i]){
             squares[i].style.backgroundColor = colors[i]
