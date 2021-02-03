@@ -21,12 +21,14 @@ for(var i = 0; i < squares.length; i++){
 
         if(clickedColor === colorPicked){
             message.textContent = " CORRECT"
+            message.style.color = "blue"
             changeColor(clickedColor);
             h1.style.backgroundColor = clickedColor;
             newcolors.textContent = "PLAY AGAIN"
         } else {
             this.style.backgroundColor = "#232323"
             message.textContent = "TRY AGAIN"
+            message.style.color = "red"
         }
     })
 }
@@ -40,10 +42,10 @@ easy.addEventListener("click", function(){
     hard.classList.remove("selected")
     colors = generateRandomColor(3);
     colorPicked = pickColor();
-    colorDisplay.textContent = colorPicked
-    message.textContent = ""
-    newcolors.textContent = "NEW COLORS"
-    h1.style.backgroundColor = "steelblue"
+    colorDisplay.textContent = colorPicked;
+    message.textContent = "";
+    h1.style.backgroundColor = "rgb(58, 132, 228)";
+    newcolors.textContent = "NEW COLORS";
     for(var i = 0; i < squares.length; i++){
         if(colors[i]){
             squares[i].style.backgroundColor = colors[i]
@@ -59,9 +61,9 @@ hard.addEventListener("click", function(){
     colors = generateRandomColor(6);
     colorPicked = pickColor();
     colorDisplay.textContent = colorPicked
-    message.textContent = ""
-    newcolors.textContent = "NEW COLORS"
-    h1.style.backgroundColor = "steelblue"
+    message.textContent = "";
+    h1.style.backgroundColor = "rgb(58, 132, 228)";
+    newcolors.textContent = "NEW COLORS";
     for(var i = 0; i < squares.length; i++){
         if(colors[i]){
             squares[i].style.backgroundColor = colors[i]

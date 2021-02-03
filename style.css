@@ -17,12 +17,13 @@ body {
     border-radius: 30px;
 }
 
-#container {
+#containers {
     max-width: 600px;
     margin: 0 auto;
 }
 
 h1 {
+    text-transform: uppercase;
     color: white;
     text-align: center;
     font-size: 40px;
@@ -42,6 +43,7 @@ h1 {
     background-color: white;
     padding: 0px;
     margin-bottom: 25px; 
+    margin-top: -10px;
     font-size: 21px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -50,6 +52,7 @@ h1 {
 .paragraph #newcolors, #easy, #hard {
     margin-left: 29%;
     padding: 0 5px;     
+    margin-bottom: 0px;
 }
 .paragraph #newcolors:hover, #easy:hover, #hard:hover {
     background-color: rgb(58, 132, 228);
@@ -73,4 +76,36 @@ h1 {
 .selected {
     background: rgb(58, 132, 255);
     color: white;
+}
+
+@media (max-width: 767px){
+    .paragraph {
+        font-size: 13px;
+        margin-bottom: 12px; 
+
+    }
+    h1 {
+        font-size: 26px;
+        padding: 30px 0;
+        text-transform: uppercase;
+    }
+    #colorDisplay {
+        font-size: 40px;
+    }
+    .paragraph #newcolors, #easy, #hard {
+        margin-left: 3%;
+        padding: 0 5px;     
+        margin-bottom: 0px;
+    }
+    #easy {
+        position: fixed;
+        margin-left: 64%;
+    }
+    #hard {
+        position: fixed;
+        margin-left: 75.5%;
+    }
+    .square {
+        margin-top: 15px;
+    }
 }
